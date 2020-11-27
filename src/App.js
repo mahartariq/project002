@@ -1,22 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import MyApp from './myApp';
 
-function App() {
+function App({work}) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>github.com/mahartariq</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <div>
+     <h1>Remote Job <u>In sha ALLAH</u></h1>
+     <h2>HTML</h2>
+     <h2>CSS</h2>
+     <h2>Javascript</h2>
+     <h2>Git</h2>
+     <h2>Reactjs</h2>
+
+     <MyApp salary="$4000" freelancing="$3000" techwork = {work} />
+   </div>
   );
 }
 
